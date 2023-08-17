@@ -1,45 +1,35 @@
+@import 'partials/fonts';
+@import 'partials/colors';
 
-@font-face {
-    font-family: 'League Spartan';
-    src: url('fonts/leaguespartan-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
+
+  $brand_font: 'Praise', cursive;
+  $tittle_font: 'Lobster', cursive;  
+  $text_font: 'League';
+  $bouton_font: 'Libre Baskerville'; //Bouton ou texte a voir
   
-
-  @font-face {
-    font-family: 'League Spartan';
-    src: url('fonts/leaguespartan-variablefont_wght-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  $jp: 'Roboto Slab', serif;
-
-
 
 body{
     background-color: white;
 }
 
 h1{
-    font-family: 'Praise', cursive;
+    font-family: $brand_font;
 }
 
 h2{
-    font-family: 'Lobster', cursive;
+    font-family: $tittle_font;
 }
 
 p{
-    font-family: 'Libre Baskerville', serif;
+    font-family: $text_font;
+    font-size: 28px;
 }
 
 button{
-    font-family:  'Libre Baskerville';
-    font-style: italic
-    
+    font-family:  $bouton_font;
+    font-size: 24px;
 }
 
-h3{
-    font-family: $jp;
+div{
+    background-color: $white;
 }

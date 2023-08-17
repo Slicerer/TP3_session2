@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "League Spartan";
+  font-family: "League";
   src: url("fonts/leaguespartan-variablefont_wght-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "League Spartan";
+  font-family: "League";
   src: url("fonts/leaguespartan-variablefont_wght-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -23,14 +23,37 @@ h2 {
 }
 
 p {
-  font-family: "Libre Baskerville", serif;
+  font-family: "League";
+  font-size: 28px;
 }
 
 button {
   font-family: "Libre Baskerville";
-  font-style: italic;
+  font-size: 24px;
 }
 
-h3 {
-  font-family: "Roboto Slab", serif;
+body {
+  background-color: white;
+}
+
+h1 {
+  font-family: "Praise", cursive;
+}
+
+h2 {
+  font-family: "Lobster", cursive;
+}
+
+p {
+  font-family: "League";
+  font-size: 28px;
+}
+
+button {
+  font-family: "Libre Baskerville";
+  font-size: 24px;
+}
+
+div {
+  background-color: rgba(255, 255, 240, 0.7);
 }/*# sourceMappingURL=main.css.map */

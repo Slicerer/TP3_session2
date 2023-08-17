@@ -1,3 +1,45 @@
-*{
-    background-color: bisque;
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('fonts/leaguespartan-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+  @font-face {
+    font-family: 'League Spartan';
+    src: url('fonts/leaguespartan-variablefont_wght-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  $jp: 'Roboto Slab', serif;
+
+
+
+body{
+    background-color: white;
+}
+
+h1{
+    font-family: 'Praise', cursive;
+}
+
+h2{
+    font-family: 'Lobster', cursive;
+}
+
+p{
+    font-family: 'Libre Baskerville', serif;
+}
+
+button{
+    font-family:  'Libre Baskerville';
+    font-style: italic
+    
+}
+
+h3{
+    font-family: $jp;
 }

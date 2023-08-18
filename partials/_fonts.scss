@@ -13,6 +13,7 @@
     font-weight: normal;
     font-style: normal;
   }
+  
 
   $brand_font: 'Praise', cursive;
   $tittle_font: 'Lobster', cursive;  
@@ -20,24 +21,3 @@
   $bouton_font: 'Libre Baskerville'; //Bouton ou texte a voir
   
 
-body{
-    background-color: white;
-}
-
-h1{
-    font-family: $brand_font;
-}
-
-h2{
-    font-family: $tittle_font;
-}
-
-p{
-    font-family: $text_font;
-    font-size: 28px;
-}
-
-button{
-    font-family:  $bouton_font;
-    font-size: 24px;
-}

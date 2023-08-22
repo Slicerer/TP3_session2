@@ -2,13 +2,13 @@
 @import 'partials/colors';
 
 
-  $brand_font: 'Praise', cursive;
-  $tittle_font: 'Lobster', cursive;  
-  $text_font: 'League';
-  $bouton_font: 'Libre Baskerville'; //Bouton ou texte a voir
 
 
 
+  .perfectum__font{
+    font-family: $brand_font;
+    color: $yellow;
+  }
   
 
   

@@ -10,6 +10,11 @@
   font-weight: normal;
   font-style: normal;
 }
+.perfectum__font {
+  font-family: "Praise", cursive;
+  color: rgb(251, 179, 21);
+}
+
 * {
   padding: 0;
   margin: 0;

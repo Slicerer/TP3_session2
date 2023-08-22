@@ -3,42 +3,20 @@
 
 
 
-
-
-  .perfectum__font{
+nav{
+  .perfectum--font{
     font-family: $brand_font;
     color: $yellow;
   }
+
+.font--button{
+  font-family: $font--button;
+}
+}
   
 
   
-  
 
-// body{
-//     background-color: white;
-// }
-
-// h1{
-//     font-family: $brand_font;
-// }
-
-// h2{
-//     font-family: $tittle_font;
-// }
-
-// p{
-//     font-family: $text_font;
-//     font-size: 28px;
-// }
-
-// button{
-//     font-family:  $bouton_font;
-//     font-size: 24px;
-// }
-
-// div{
-//     background-color: $white;
-// }
 
 *{
     padding: 0;

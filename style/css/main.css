@@ -10,9 +10,12 @@
   font-weight: normal;
   font-style: normal;
 }
-.perfectum__font {
+nav .perfectum--font {
   font-family: "Praise", cursive;
   color: rgb(251, 179, 21);
+}
+nav .font--button {
+  font-family: "Libre Baskerville";
 }
 
 * {

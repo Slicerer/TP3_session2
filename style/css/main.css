@@ -32,6 +32,9 @@ nav .font--button {
   font-family: "Libre Baskerville";
 }
 
+.secCarousselle {
+  background-color: rgba(46, 163, 220, 0.7);
+}
 @media (min-width: 0px) and (max-width: 639px) {
   .secCarousselle {
     height: 455px;
@@ -58,6 +61,6 @@ nav .font--button {
   }
 }
 
-.proot {
-  border: 4px solid red;
+.secPresentation {
+  height: 1000px;
 }/*# sourceMappingURL=main.css.map */

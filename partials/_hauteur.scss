@@ -10,7 +10,7 @@ $desktop-height-s: 455px;
 //med corespond a small tailwin
 $desktop-min-m: 640px;
 $desktop-max-m: 767px;
-$desktop-height-m: 650px;
+$desktop-height-m: 550px;
 @mixin h-m {
   @media (min-width: #{$desktop-min-m}) and (max-width: #{$desktop-max-m}) {
     height: $desktop-height-m;
@@ -37,7 +37,7 @@ $desktop-height-xl: 700px;
 //xxl
 $desktop-min-xxl: 1440px;
 $desktop-max-xxl: 5000px;
-$desktop-height-xxl: 1050px;
+$desktop-height-xxl: 900px;
 @mixin h-xxl {
   @media (min-width: #{$desktop-min-xxl}) and (max-width: #{$desktop-max-xxl}) {
     height: $desktop-height-xxl;

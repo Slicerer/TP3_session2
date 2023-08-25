@@ -34,17 +34,17 @@ nav .font--button {
 
 @media (min-width: 0px) and (max-width: 639px) {
   .secCarousselle {
-    height: 500px;
+    height: 455px;
   }
 }
 @media (min-width: 640px) and (max-width: 767px) {
   .secCarousselle {
-    height: 800px;
+    height: 550px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .secCarousselle {
-    height: 500px;
+    height: 650px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
@@ -54,7 +54,7 @@ nav .font--button {
 }
 @media (min-width: 1440px) and (max-width: 5000px) {
   .secCarousselle {
-    height: 800px;
+    height: 900px;
   }
 }
 

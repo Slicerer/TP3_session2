@@ -9,83 +9,83 @@ body{
   box-sizing: border-box;
 }
 
-$desktop-min-xs: 0px;
-$desktop-max-xs: 639px;
-$desktop-height-xs: 500px;
+// $desktop-min-xs: 0px;
+// $desktop-max-xs: 639px;
+// $desktop-height-xs: 500px;
 
-@mixin h-xs {
-  @media (min-width: #{$desktop-min-xs}) and (max-width: #{$desktop-max-xs}) {
-    height: $desktop-height-xs;
-  }
-}
+// @mixin h-xs {
+//   @media (min-width: #{$desktop-min-xs}) and (max-width: #{$desktop-max-xs}) {
+//     height: $desktop-height-xs;
+//   }
+// }
 
-$desktop-min-s: 640px;
-$desktop-max-s: 767px;
-$desktop-height-s: 800px;
+// $desktop-min-s: 640px;
+// $desktop-max-s: 767px;
+// $desktop-height-s: 800px;
 
-@mixin h-s {
-  @media (min-width: #{$desktop-min-s}) and (max-width: #{$desktop-max-s}) {
-    height: $desktop-height-s;
-  }
-}
+// @mixin h-s {
+//   @media (min-width: #{$desktop-min-s}) and (max-width: #{$desktop-max-s}) {
+//     height: $desktop-height-s;
+//   }
+// }
 
-$desktop-min-m: 768px;
-$desktop-max-m: 1023px;
-$desktop-height-m: 500px;
+// $desktop-min-m: 768px;
+// $desktop-max-m: 1023px;
+// $desktop-height-m: 500px;
 
-@mixin h-m {
-  @media (min-width: #{$desktop-min-m}) and (max-width: #{$desktop-max-m}) {
-    height: $desktop-height-m;
-  }
-}
+// @mixin h-m {
+//   @media (min-width: #{$desktop-min-m}) and (max-width: #{$desktop-max-m}) {
+//     height: $desktop-height-m;
+//   }
+// }
 
-$desktop-min-l: 1024px;
-$desktop-max-l: 1439px;
-$desktop-height-l: 700px;
+// $desktop-min-l: 1024px;
+// $desktop-max-l: 1439px;
+// $desktop-height-l: 700px;
 
-@mixin h-l {
-  @media (min-width: #{$desktop-min-l}) and (max-width: #{$desktop-max-l}) {
-    height: $desktop-height-l;
-  }
-}
+// @mixin h-l {
+//   @media (min-width: #{$desktop-min-l}) and (max-width: #{$desktop-max-l}) {
+//     height: $desktop-height-l;
+//   }
+// }
 
-$desktop-min-xl: 1440px;
-$desktop-max-xl: 5000px;
-$desktop-height-xl: 800px;
+// $desktop-min-xl: 1440px;
+// $desktop-max-xl: 5000px;
+// $desktop-height-xl: 800px;
 
-@mixin h-xl {
-  @media (min-width: #{$desktop-min-xl}) and (max-width: #{$desktop-max-xl}) {
-    height: $desktop-height-xl;
-  }
-}
+// @mixin h-xl {
+//   @media (min-width: #{$desktop-min-xl}) and (max-width: #{$desktop-max-xl}) {
+//     height: $desktop-height-xl;
+//   }
+// }
 
-@mixin responsive-heights {
-    $desktop-min-xs: 0px;
-    $desktop-max-xs: 639px;
-    $desktop-height-xs: 500px;
+// @mixin responsive-heights {
+//     $desktop-min-xs: 0px;
+//     $desktop-max-xs: 639px;
+//     $desktop-height-xs: 500px;
   
-    $desktop-min-s: 640px;
-    $desktop-max-s: 767px;
-    $desktop-height-s: 800px;
+//     $desktop-min-s: 640px;
+//     $desktop-max-s: 767px;
+//     $desktop-height-s: 800px;
   
-    $desktop-min-m: 768px;
-    $desktop-max-m: 1023px;
-    $desktop-height-m: 500px;
+//     $desktop-min-m: 768px;
+//     $desktop-max-m: 1023px;
+//     $desktop-height-m: 500px;
   
-    $desktop-min-l: 1024px;
-    $desktop-max-l: 1439px;
-    $desktop-height-l: 700px;
+//     $desktop-min-l: 1024px;
+//     $desktop-max-l: 1439px;
+//     $desktop-height-l: 700px;
   
-    $desktop-min-xl: 1440px;
-    $desktop-max-xl: 5000px;
-    $desktop-height-xl: 800px;
+//     $desktop-min-xl: 1440px;
+//     $desktop-max-xl: 5000px;
+//     $desktop-height-xl: 800px;
   
-    @include h-xs;
-    @include h-s;
-    @include h-m;
-    @include h-l;
-    @include h-xl;
-  }
+//     @include h-xs;
+//     @include h-s;
+//     @include h-m;
+//     @include h-l;
+//     @include h-xl;
+//   }
 
 
 

@@ -9,11 +9,6 @@ body{
   box-sizing: border-box;
 }
 
-
-
-
-
-
 .container-fluid {
 
 width: 100%;
@@ -51,7 +46,23 @@ nav{
 
 
 .secPresentation{
-  height: 1000px;
-}
-  
+  height: 900px;
 
+.divStory__left--text{
+font-family:  $text_font;
+strong{
+color: $orange;
+    }
+}
+}
+
+.secFournisseur{
+ height: 900px;
+}
+
+
+  
+//  $brand_font: 'Praise', cursive;
+//   $tittle_font: 'Lobster', cursive;  
+//   $text_font: 'League';
+//   $font--button: 'Libre Baskerville'; //Bouton ou texte a voir

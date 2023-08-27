@@ -62,5 +62,15 @@ nav .font--button {
 }
 
 .secPresentation {
-  height: 1000px;
+  height: 900px;
+}
+.secPresentation .divStory__left--text {
+  font-family: "League";
+}
+.secPresentation .divStory__left--text strong {
+  color: rgb(239, 83, 35);
+}
+
+.secFournisseur {
+  height: 900px;
 }/*# sourceMappingURL=main.css.map */

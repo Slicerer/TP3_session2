@@ -3,30 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Praise&display=swap" rel="stylesheet" />
-    <script src="tailwind.config.js"></script>
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style/css/main.css" />
+
     <script src="script/bascule.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
     <title>Perfectum</title>
   </head>
   <body>
-    <button id="theme-toggle" type="button" class="m-4 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-      <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-      <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-        ></path>
-      </svg>
-      Double click to dark mode
-    </button>
-
     <header>
       <nav class="bg-white border-gray-200 dark:bg-gray-800 dark:border-gray-700">
         <!--LOGO PERFECTUM-->
@@ -107,16 +98,27 @@
         </div>
       </nav>
     </header>
+    <button id="theme-toggle" type="button" class="m-4 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+      <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+      <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+      Double click to dark mode
+    </button>
 
-    <section>
+    <section class="transform">
       <img src="img/wave_bg.png" alt="image de fond avec des vagues" />
     </section>
 
     <!-- -------------------------------------------WORK HERE------------------------------------------- -->
-    <section class="secCarousselle flex flex-col justify-center items-center">
-      <div id="controls-carousel" class="w-full h-full divCarouselle container-fluid grid grid-cols-12" data-carousel="static">
+    <section class="secCarousselle flex flex-col justify-center items-center translate -translate-y-2">
+      <div id="controls-carousel" class="w-full h-full divCarousselle container-fluid grid grid-cols-12" data-carousel="static">
         <!-- Carousel wrapper -->
-        <div class="relative overflow-hidden rounded-lg col-start-1 col-end-13 md:col-start-2 md:col-end-12 lg:col-start-3 lg:col-end-11 2xl:col-start-4 2xl:col-end-10">
+        <div class="relative overflow-hidden rounded-lg col-start-1 col-end-13 md:col-start-2 md:col-end-12 lg:col-start-3 lg:col-end-11 2xl:col-start-4 2xl:col-end-10 divCarousselle__cadre">
           <!-- Item 1 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="img/Broderie.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Véhicule Lettré" />
@@ -183,7 +185,7 @@
     <section class="mt-6 md:mt-0 w-full flex flex-row items-center justify-center border-b-2 border-black secPresentation">
       <div class="w-10/12 lg:w-8/12 0 grid grid-cols-12 divStory">
         <div class="col-span-12 md:col-start-2 md:col-end-6 flex flex-col items-center justify-center divStory__left">
-          <p class="flex-wrap text-center text-3xl divStory__left--text">
+          <p class="flex-wrap text-center text-4xl divStory__left--text">
             Fort de près de 10 ans d'expérience, Les Créations Perfectum sont leaders dans les articles promotionnels. Toujours à l'avant-garde des techniques d'impression et de décoration, <br /><strong
               >NOUS SOMMES LES INCONTOURNABLE POUR ATTIRER L'ŒIL DE VOTRE CLIENT CIBLE !</strong
             >
@@ -196,48 +198,27 @@
       </div>
     </section>
 
-    <section class="secFournisseur flex flex-col items-center justify-between">
-      <div class="w-5/6 grid grid-cols-12 gap-1 bg-slate-400">
-        <div class="col-span-12 flex flex-col items-center justify-center">
-          <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-5xl dark:text-white">Vistez Le Catalogue De Nos Fournisseur Principal !</h1>
-          <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+    <section class="secFournisseur">
+      <div class="mx-auto w-8/12 grid grid-cols-11 gap-10 py-20 secFournisseurDiv text-center text-4xl gap-y-24 text-white">
+        <div class="col-span-12 secFournisseurDiv__tittle">
+          <h1 class="text-center text-6xl">Visitez nos fournisseur et associé</h1>
         </div>
 
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 col-start-2 col-end-6">
-          <div class="p-5">
-            <a href="">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a
-              href="https://www.sanmarcanada.com/"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >
-              Read more
-              <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-              </svg>
-            </a>
-          </div>
+        <div class="col-span-6">
+          <a href="https://www.facebook.com/search/top?q=%F0%9D%97%98%F0%9D%97%A6%F0%9D%97%96%F0%9D%97%94%F0%9D%97%A0%F0%9D%97%9C%F0%9D%97%9F%F0%9D%97%9F%F0%9D%97%94%20carte%20g%C3%A9ante%20personnalis%C3%A9e"> ESCAMILLA carte géante</a>
         </div>
 
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 col-start-9 col-end-13">
-          <div class="p-5">
-            <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a
-              href="https://fr-ca.ssactivewear.com/"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >
-              Read more
-              <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-              </svg>
-            </a>
-          </div>
-        </div>
+        <div class="col-span-6"><a href="https://www.sanmarcanada.com/">Sanmar Canada</a></div>
+
+        <div class="col-span-6"><a href="https://canada-sportswear-corp.myshopify.com/">Canada Sportswear</a></div>
+
+        <div class="col-span-6"><a href="https://www.alphabroder.ca/">Alphabroder</a></div>
+
+        <div class="col-span-6"><a href="nena_broderie.com/">Nena Broderie</a></div>
+
+        <div class="col-span-6"><a href="https://fr-ca.ssactivewear.com/">S&S Canada</a></div>
+
+        <!--demandé FB a anna -->
       </div>
     </section>
 

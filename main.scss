@@ -10,7 +10,6 @@ body{
 }
 
 .container-fluid {
-
 width: 100%;
 padding-right: 15px;
 padding-left: 15px;
@@ -35,21 +34,19 @@ nav{
 .secCarousselle{
   @include  responsive-heights;
   background-color: $blue;
+
+  // .divCarousselle{
+  //   &__cadre{
+ 
+  // }
+  // }
   }
 
-
-//   .divCarouselle{
-//    width: 750px;
-//    height: 500px;
-//  }
-// }
-
-
-.secPresentation{
-  height: 900px;
+  .secPresentation{
+  height: 1000px;
 
 .divStory__left--text{
-font-family:  $text_font;
+font-family:  $font--button;
 strong{
 color: $orange;
     }
@@ -57,7 +54,13 @@ color: $orange;
 }
 
 .secFournisseur{
- height: 900px;
+ height: 700px;
+ background-color: $blue;
+ &Div{
+ font-family: $font--button;
+ }
+
+
 }
 
 

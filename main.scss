@@ -29,22 +29,23 @@ margin-left: auto;
   @include  responsive-heights;
   background-color: rgb(46, 143, 220);
 
-  // .divCarousselle{
-  //   &__cadre{
- 
-  // }
-  // }
   }
 
   .secPresentation{
-  height: 1000px;
+  height: 1150px;
 
 .divStory__left--text{
+@include smallTextStyles;
+@include medTextStyles;
+@include largeTextStyles;
 font-family:  $font--button;
+line-height: 60px;
+word-spacing: 20px;
 strong{
 color: $orange;
     }
 }
+
 }
 
 .secFournisseur{
@@ -53,8 +54,6 @@ color: $orange;
  &Div{
  font-family: $font--button;
  }
-
-
 }
 
 

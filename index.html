@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Praise&display=swap" rel="stylesheet" />
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js" defer></script>
     <link rel="stylesheet" href="style/css/main.css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -122,15 +124,6 @@
             <img src="img/informatique.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
           </div>
 
-          <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/30">
-              <svg class="w-4 h-4 text-orange-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
-              </svg>
-              <span class="sr-only">Previous</span>
-            </span>
-          </button>
-
           <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 2xl:bottom-24">
             <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
             <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
@@ -141,6 +134,15 @@
             <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 7" data-carousel-slide-to="6"></button>
             <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 8" data-carousel-slide-to="7"></button>
           </div>
+
+          <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/30">
+              <svg class="w-4 h-4 text-orange-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
 
           <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
             <span class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/30 group-hover:bg-white/50">
@@ -154,16 +156,16 @@
       </div>
     </section>
 
-    <section class="mt-6 md:mt-0 w-full flex flex-row items-center justify-center border-b-2 border-black secPresentation">
-      <div class="w-10/12 lg:w-8/12 0 grid grid-cols-12 divStory">
-        <div class="col-span-12 md:col-start-2 md:col-end-6 flex flex-col items-center justify-center divStory__left">
-          <p class="flex-wrap text-center text-3xl divStory__left--text">
+    <section class="pt-0 pb-0 mt-6 md:mt-0 w-full flex flex-row items-center justify-center border-b-2 border-black secPresentation">
+      <div class="w-10/12 lg:w-10/12 0 grid grid-cols-12 divStory">
+        <div class="col-span-12 md:col-start-1 md:col-end-6 flex flex-col items-center justify-center divStory__left">
+          <p class="flex-wrap text-center text-2xl sm:text-2xl md:text-2xl lg:text-3xl divStory__left--text">
             <strong>NOUS SOMMES LES INCONTOURNABLE POUR ATTIRER L'ŒIL DE VOTRE CLIENT CIBLE !</strong> <br />
-            Fort de 10 ans d'expérience, nous sommes leaders dans les articles promotionnels. Toujours à l'avant-garde des techniques d'impression et de décoration,
+            Fort de 10 ans d'expérience, nous sommes leaders dans les articles promotionnels. Toujours à l'avant-garde des techniques d'impression et de décoration
           </p>
         </div>
 
-        <div class="col-span-12 md:col-start-7 md:col-end-13 divStory__right">
+        <div class="col-span-12 md:col-start-7 md:col-end-13 divStory__right xl:w-4/5">
           <img src="img/heroes_dog.png" alt="photo de chien mascote divStory__right--img" />
         </div>
       </div>

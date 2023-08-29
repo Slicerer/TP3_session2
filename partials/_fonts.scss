@@ -1,10 +1,31 @@
+@mixin smallTextStyles {
+  @media (min-width: 1px) and (max-width: 767px) {
+    line-height: 28px;
+    word-spacing: 5px;
+  }
+}
 
+
+
+@mixin medTextStyles {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    line-height: 30px;
+    word-spacing: 12px;
+  }
+}
+  
+@mixin largeTextStyles {
+  @media (min-width: 1024px) and (max-width: 5000px) {
+    line-height: 40px;
+    word-spacing: 12px;
+  }
+}
+
+
+$brand_font: 'Praise', cursive;
+$tittle_font: 'Lobster', cursive;  
+$font--button: 'Libre Baskerville'; //Bouton ou texte a voir
 
   
-
-  $brand_font: 'Praise', cursive;
-  $tittle_font: 'Lobster', cursive;  
-
-  $font--button: 'Libre Baskerville'; //Bouton ou texte a voir
   
 

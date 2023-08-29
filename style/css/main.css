@@ -46,10 +46,30 @@ body {
 }
 
 .secPresentation {
-  height: 1000px;
+  height: 1150px;
 }
 .secPresentation .divStory__left--text {
   font-family: "Libre Baskerville";
+  line-height: 60px;
+  word-spacing: 20px;
+}
+@media (min-width: 1px) and (max-width: 767px) {
+  .secPresentation .divStory__left--text {
+    line-height: 28px;
+    word-spacing: 5px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .secPresentation .divStory__left--text {
+    line-height: 30px;
+    word-spacing: 12px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 5000px) {
+  .secPresentation .divStory__left--text {
+    line-height: 40px;
+    word-spacing: 12px;
+  }
 }
 .secPresentation .divStory__left--text strong {
   color: rgb(239, 83, 35);

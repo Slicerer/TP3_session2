@@ -12,16 +12,12 @@ body {
   margin-left: auto;
 }
 
-nav .perfectum--font {
-  font-family: "Praise", cursive;
-  color: rgb(251, 179, 21);
-}
-nav .font--button {
-  font-family: "Libre Baskerville";
+.divNavBar {
+  background-color: rgb(46, 163, 220);
 }
 
 .secCarousselle {
-  background-color: rgb(46, 163, 220);
+  background-color: rgb(46, 143, 220);
 }
 @media (min-width: 0px) and (max-width: 639px) {
   .secCarousselle {
@@ -45,7 +41,7 @@ nav .font--button {
 }
 @media (min-width: 1440px) and (max-width: 5000px) {
   .secCarousselle {
-    height: 900px;
+    height: 1000px;
   }
 }
 

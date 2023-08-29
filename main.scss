@@ -18,22 +18,16 @@ margin-left: auto;
 }
 
   //Section nav
-nav{
-  .perfectum--font{
-    font-family: $brand_font;
-    color: $yellow;
-  }
 
-.font--button{
-  font-family: $font--button;
-}
+.divNavBar{
+  background-color: $blue;
 }
 
 //Section carousselle
 
 .secCarousselle{
   @include  responsive-heights;
-  background-color: $blue;
+  background-color: rgb(46, 143, 220);
 
   // .divCarousselle{
   //   &__cadre{

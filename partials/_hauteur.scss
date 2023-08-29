@@ -37,7 +37,7 @@ $desktop-height-xl: 700px;
 //xxl
 $desktop-min-xxl: 1440px;
 $desktop-max-xxl: 5000px;
-$desktop-height-xxl: 900px;
+$desktop-height-xxl: 1000px;
 @mixin h-xxl {
   @media (min-width: #{$desktop-min-xxl}) and (max-width: #{$desktop-max-xxl}) {
     height: $desktop-height-xxl;

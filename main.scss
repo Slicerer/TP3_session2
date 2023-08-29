@@ -49,10 +49,13 @@ color: $orange;
 }
 
 .secFournisseur{
- height: 700px;
+ height: 500px;
  background-color: $blue;
  &Div{
  font-family: $font--button;
+ h2{
+  font-family: $brand_font;
+ }
  }
 }
 

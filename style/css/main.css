@@ -76,9 +76,12 @@ body {
 }
 
 .secFournisseur {
-  height: 700px;
+  height: 500px;
   background-color: rgb(46, 163, 220);
 }
 .secFournisseurDiv {
   font-family: "Libre Baskerville";
+}
+.secFournisseurDiv h2 {
+  font-family: "Praise", cursive;
 }/*# sourceMappingURL=main.css.map */

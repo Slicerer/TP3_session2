@@ -45,8 +45,9 @@ strong{
 color: $orange;
     }
 }
-
 }
+
+
 
 .secFournisseur{
  height: 500px;
@@ -56,6 +57,7 @@ color: $orange;
  h2{
   font-family: $brand_font;
  }
+
  }
 }
 
@@ -64,6 +66,32 @@ color: $orange;
   font-family: $font--button;
 }
 
+
+// page de service style
+
+.secServicesAllSamePlace{
+  height: 1200px;
+
+  h2{
+    font-family: $brand_font;
+  }
+  h3{
+    font-family: $tittle_font;
+    span{
+      font-family: $brand_font;
+    }
+   }
+   #h3__font{
+    font-family: $font--button;
+  }
+   
+  p{
+    font-family: $font--button;
+  }
+ 
+}
+
+//fin page de service
 
   
 //  $brand_font: 'Praise', cursive;

@@ -88,4 +88,23 @@ body {
 
 .footer__droit--span {
   font-family: "Libre Baskerville";
+}
+
+.secServicesAllSamePlace {
+  height: 1200px;
+}
+.secServicesAllSamePlace h2 {
+  font-family: "Praise", cursive;
+}
+.secServicesAllSamePlace h3 {
+  font-family: "Lobster", cursive;
+}
+.secServicesAllSamePlace h3 span {
+  font-family: "Praise", cursive;
+}
+.secServicesAllSamePlace #h3__font {
+  font-family: "Libre Baskerville";
+}
+.secServicesAllSamePlace p {
+  font-family: "Libre Baskerville";
 }/*# sourceMappingURL=main.css.map */

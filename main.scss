@@ -1,100 +1,128 @@
 @import 'partials/fonts';
 @import 'partials/colors';
 @import 'partials/hauteur';
-//
 
-body{
+body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 .container-fluid {
-width: 100%;
-padding-right: 15px;
-padding-left: 15px;
-margin-right: auto;
-margin-left: auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-  //Section nav
+// Section nav
 
-.divNavBar{
+.divNavBar {
   background-color: $blue;
 }
 
-//Section carousselle
+// Section carrousel
 
-.secCarousselle{
-  @include  responsive-heights;
+.secCarousselle {
+  @include responsive-heights;
   background-color: rgb(46, 143, 220);
+}
 
-  }
-
-  .secPresentation{
+.secPresentation {
   height: 1150px;
 
-.divStory__left--text{
-@include smallTextStyles;
-@include medTextStyles;
-@include largeTextStyles;
-font-family:  $font--button;
-line-height: 60px;
-word-spacing: 20px;
-strong{
-color: $orange;
+  .divStory__left--text {
+    @include smallTextStyles;
+    @include medTextStyles;
+    @include largeTextStyles;
+    font-family: $font--button;
+    line-height: 60px;
+    word-spacing: 20px;
+
+    strong {
+      color: $orange;
     }
-}
-}
-
-
-
-.secFournisseur{
- height: 500px;
- background-color: $blue;
- &Div{
- font-family: $font--button;
- h2{
-  font-family: $brand_font;
- }
-
- }
+  }
 }
 
+.secFournisseur {
+  height: 500px;
+  background-color: $blue;
 
-.footer__droit--span{
+  &Div {
+    font-family: $font--button;
+
+    h2 {
+      font-family: $brand_font;
+    }
+  }
+}
+
+.footer__droit--span {
   font-family: $font--button;
 }
 
+// Page de service style
 
-// page de service style
+.fireSection {
+  background-color: $orange;
 
-.secServicesAllSamePlace{
-  height: 1200px;
-
-  h2{
-    font-family: $brand_font;
-  }
-  h3{
-    font-family: $tittle_font;
-    span{
+  .secServicesAllSamePlace {
+    h2 {
       font-family: $brand_font;
     }
-   }
-   #h3__font{
-    font-family: $font--button;
+
+    h3 {
+      font-family: $tittle_font;
+
+      span {
+        font-family: $brand_font;
+      }
+    }
+
+    #h3__font {
+      font-family: $font--button;
+    }
+
+    p {
+      font-family: $font--button;
+    }
   }
-   
-  p{
-    font-family: $font--button;
-  }
- 
 }
 
-//fin page de service
+.sectionWeb {
+  height: 800px;
 
-  
-//  $brand_font: 'Praise', cursive;
-//   $tittle_font: 'Lobster', cursive;  
-//   $text_font: 'League';
-//   $font--button: 'Libre Baskerville'; //Bouton ou texte a voir
+  img {
+    box-shadow: 18px 20px rgba($color: rgb(0, 0, 0), $alpha: 0.8);
+  }
+
+  &__text {
+    font-family: $font--button;
+
+    h2 {
+      color: $orange;
+      font-family: $tittle_font;
+    }
+  }
+}
+
+.sectionScreen {
+  height: 800px;
+
+  img {
+    box-shadow: 18px 20px rgba($color: rgb(0, 0, 0), $alpha: 0.8);
+  }
+
+  &__text {
+    font-family: $font--button;
+
+    h2 {
+      color: $orange;
+      font-family: $tittle_font;
+    }
+  }
+}
+
+// Fin page de service

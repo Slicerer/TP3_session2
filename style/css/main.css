@@ -90,21 +90,49 @@ body {
   font-family: "Libre Baskerville";
 }
 
-.secServicesAllSamePlace {
-  height: 1200px;
+.fireSection {
+  background-color: rgb(239, 83, 35);
 }
-.secServicesAllSamePlace h2 {
+.fireSection .secServicesAllSamePlace h2 {
   font-family: "Praise", cursive;
 }
-.secServicesAllSamePlace h3 {
+.fireSection .secServicesAllSamePlace h3 {
   font-family: "Lobster", cursive;
 }
-.secServicesAllSamePlace h3 span {
+.fireSection .secServicesAllSamePlace h3 span {
   font-family: "Praise", cursive;
 }
-.secServicesAllSamePlace #h3__font {
+.fireSection .secServicesAllSamePlace #h3__font {
   font-family: "Libre Baskerville";
 }
-.secServicesAllSamePlace p {
+.fireSection .secServicesAllSamePlace p {
   font-family: "Libre Baskerville";
+}
+
+.sectionWeb {
+  height: 800px;
+}
+.sectionWeb img {
+  box-shadow: 18px 20px rgba(0, 0, 0, 0.8);
+}
+.sectionWeb__text {
+  font-family: "Libre Baskerville";
+}
+.sectionWeb__text h2 {
+  color: rgb(239, 83, 35);
+  font-family: "Lobster", cursive;
+}
+
+.sectionScreen {
+  height: 800px;
+}
+.sectionScreen img {
+  box-shadow: 18px 20px rgba(0, 0, 0, 0.8);
+}
+.sectionScreen__text {
+  font-family: "Libre Baskerville";
+}
+.sectionScreen__text h2 {
+  color: rgb(239, 83, 35);
+  font-family: "Lobster", cursive;
 }/*# sourceMappingURL=main.css.map */

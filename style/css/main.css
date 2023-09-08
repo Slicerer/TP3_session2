@@ -135,4 +135,12 @@ body {
 .sectionScreen__text h2 {
   color: rgb(239, 83, 35);
   font-family: "Lobster", cursive;
+}
+
+.sectionVideos {
+  background-color: rgb(239, 83, 35);
+  min-height: 800px;
+}
+.sectionVideos h2 {
+  font-family: "Lobster", cursive;
 }/*# sourceMappingURL=main.css.map */

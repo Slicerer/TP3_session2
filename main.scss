@@ -135,3 +135,22 @@ body {
 }
 
 // Fin page de service
+
+//page de contact
+.secForm{
+   
+   background-color: $blue;
+
+   h1{
+    font-family: $tittle_font;
+   }
+
+   img{
+    
+      box-shadow: 14px 16px rgba($color: rgb(0, 0, 0), $alpha: 0.9);
+   
+  
+   }
+}
+
+//fin de la page de contact

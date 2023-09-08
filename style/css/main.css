@@ -143,4 +143,14 @@ body {
 }
 .sectionVideos h2 {
   font-family: "Lobster", cursive;
+}
+
+.secForm {
+  background-color: rgb(46, 163, 220);
+}
+.secForm h1 {
+  font-family: "Lobster", cursive;
+}
+.secForm img {
+  box-shadow: 14px 16px rgba(0, 0, 0, 0.9);
 }/*# sourceMappingURL=main.css.map */

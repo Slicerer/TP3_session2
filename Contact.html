@@ -13,6 +13,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js" defer></script>
     <link rel="stylesheet" href="style/css/main.css" />
+    <script src="script.js" defer></script>
 
     <title>Perfectum</title>
   </head>
@@ -85,7 +86,7 @@
       <img src="img/wave_bg.png" alt="image de fond avec des vagues" />
     </section>
 
-    <section class="secForm flex flex-col justify-center items-center translate -translate-y-2">
+    <section class="handShake flex flex-col justify-center items-center translate -translate-y-2">
       <div class="sectionForm flex flex-col justify-center items-center my-14">
         <h1 class="text-center text-3xl md:text-4xl lg:text-6xl my-16 text-white"><a href="mailto:perfectum@outlook.fr" class="text-neutral-900 hover:underline">Contactez</a> Notre Équipe de Confiance</h1>
 
@@ -95,10 +96,74 @@
       </div>
     </section>
 
-    <!-- -------------------------------------------WORK HERE------------------------------------------- -->
-    <section class="bg-slate-500 h-96"></section>
+    <!-- ----------------------------------------FORM--------------------------------------------------------- -->
+    <section class="container-fluid">
+      <div class="secMapForm grid grid-cols-12 my-24">
+        <div class="form col-span-12 lg:col-start-2 lg:col-end-6 flex flex-col justify-center items-center">
+          <form class="px-6 bg-neutral-900 rounded-lg" id="form" action="txt/confimration.txt" method="get" onsubmit="return validateForm()" novalidate>
+            <h1 class="pt-4 text-center text-lg text-white mb-6">Formulaire de contact</h1>
 
-    <section class="bg-white dark:bg-gray-900">
+            <div class="sidetoside">
+              <div class="input-control">
+                <label for="prenom"></label>
+                <input class="text-neutral-900" id="prenom" name="prenom" type="text" required placeholder="Prenom" />
+                <div class="errorMessage"></div>
+              </div>
+
+              <div class="input-control">
+                <label for="famille"></label>
+                <input class="text-neutral-900" id="famille" name="famille" type="text" required placeholder="Nom de Famille" />
+                <div class="errorMessage"></div>
+              </div>
+            </div>
+
+            <div class="input-control">
+              <label for="email"></label>
+              <input class="text-neutral-900" id="email" name="email" type="text" placeholder="E-mail" />
+              <div class="errorMessage"></div>
+            </div>
+
+            <div class="input-control">
+              <label for="comentaires"></label>
+              <input class="text-neutral-900" id="comentaires" name="comentaires" type="text" required placeholder="Comentaires" />
+              <div class="errorMessage"></div>
+            </div>
+            <input type="submit" />
+          </form>
+        </div>
+
+        <div class="pt-24 col-span-12 lg:col-start-6 lg:col-end-12">
+          <img src="img/dog_poiting.png" alt="Chien quoi pointe notre equipe de travail" />
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------------------------------------- -->
+
+    <section class="sectionMap container-fluid">
+      <div class="secMap h-full md:grid md:grid-cols-12 py-16 md:py-24">
+        <div class="col-start-1 col-end-13 md:col-start-2 md:col-end-7 h-96 flex flex-col justify-center items-center mb-16 md:mb-0">
+          <iframe
+            class="w-10/12 h-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2535009.474859588!2d8.318801326745659!3d45.856068652113855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4784ca4f995afb17%3A0xa3943c035c7e8327!2sVerduonig%202b%2C%207307%20Jenins%2C%20Switzerland!5e0!3m2!1sen!2sca!4v1684632424599!5m2!1sen!2sca"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Google Maps - Emplacement de Verduonig Jenins, Suisse"
+          ></iframe>
+        </div>
+
+        <div class="col-start-1 col-end-13 md:col-start-8 md:col-end-12 flex flex-col justify-center items-center text-center text-white text-xl xl:text-2xl">
+          <h1 class="my-4 lg:my-6 lg:text-4xl">Contactez-nous pour plus d'info</h1>
+          <a class="my-4 lg:my-6" href="tel:+5149669335"><span class="pr-2 text-black">Par Téléphone; </span>514 966-9335</a>
+          <a class="my-4 lg:my-6" href="mailto:perfectum@outlook.fr"><span class="pr-2 text-black">Par E-mail; </span>perfectum@outlook.fr</a>
+          <a class="my-4 lg:my-6" href="https://www.facebook.com/Raphael.Annabelle/"><span class="text-black mr-2">Par;</span> FaceBook</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionForfait">
       <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
           <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white">Designed for business teams like yours</h2>
@@ -271,7 +336,7 @@
           </ul>
         </div>
         <!-- <a href="mailto:adresse.email@example.com">Envoyer un e-mail</a> -->
-        <hr class="my-6 border-white sm:mx-auto lg:my-8" />
+        <hr class="my-4 lg:my-6 border-white sm:mx-auto lg:my-8" />
         <span class="footer__droit--span block text-2xl text-white text-center">Tout droit réservé</span>
       </div>
     </footer>

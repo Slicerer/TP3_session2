@@ -27,8 +27,9 @@
         },
    
         {
-          "src": "flav_app/maskable_icon_x128.png",
-          "sizes": "128x128",
+            // attention celui la est un caré parfait ca l'air que ca prend ca ...
+          "src": "flav_app/maskable_icon_x144.png",
+          "sizes": "144x144",
           "type": "image/png",
           "purpose" : "maskable"  
         },
@@ -39,8 +40,8 @@
           "purpose" : "maskable"
         },
         {
-            "src": "flav_app/maskable_icon_x384.png",
-            "sizes": "384x384",
+            "src": "flav_app/maskable_icon_x512.png",
+            "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
         }

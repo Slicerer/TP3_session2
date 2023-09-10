@@ -158,56 +158,16 @@ body {
   box-shadow: 14px 16px rgba(0, 0, 0, 0.9);
 }
 
-.form .sidetoside {
-  display: flex;
-  justify-content: space-between;
+.input-control.error input {
+  border-color: 3px dashed red;
 }
-.form #form {
-  height: 525px;
-  border: 6px solid rgb(239, 83, 35);
+
+.input-control .errorMessage {
+  color: red;
 }
-.form #form h1 {
-  font-family: "Libre Baskerville";
-}
-.form #form input[type=submit] {
-  padding: 10px;
-  position: relative;
-  bottom: 20px;
-  width: 120px;
-  color: white;
-  background-color: rgb(46, 163, 220);
-  border-radius: 8px;
-  margin-top: 30px;
-}
-.form #form input[type=submit]:hover {
-  padding: 20px;
-  background-color: rgb(239, 83, 35);
-}
-.form .input-control {
-  display: flex;
-  flex-direction: column;
-}
-.form .input-control input {
-  border-radius: 4px;
-  display: block;
-  font-size: 12px;
-  padding: 10px;
-}
-.form .input-control input:focus {
-  outline: 0;
-}
-.form .input-control.success input {
-  border-color: green;
-}
-.form .input-control.error input {
-  border-color: red;
-  margin-left: 5px;
-}
-.form .input-control .errorMessage {
-  color: rgb(239, 83, 35);
-  font-size: 20px;
-  height: 22px;
-  margin-bottom: 25px;
+
+.input-control.success input {
+  border: 3px dashed green;
 }
 
 .secMap {

@@ -161,91 +161,26 @@ body {
 
 // debut form
 
-
-
-.form{
- 
-
-
-.sidetoside{
- display: flex;
- justify-content: space-between;
-
+.input-control.error input{
+  border-color: 3px dashed red;
 }
 
-#form {   //importent je vais devoir tout remplacer par du
- height: 525px;
-
-
- h1{
-   font-family: $font--button;
- }
-  border: 6px solid $orange;
-
-}
-
-#form input[type=submit] {
- padding: 10px;
- position: relative;
- bottom: 20px;
- width: 120px;
- color: white;
- background-color: $blue;
- border-radius: 8px;
- margin-top: 30px;
-
- &:hover{
-     padding: 20px;
-     background-color: $orange;
- }
-}
-
-.input-control {
- display: flex;
- flex-direction: column;
-}
-
-.input-control input {
- border-radius: 4px;
- display: block;
- font-size: 12px;
- padding: 10px;
-}
-
-.input-control input:focus {
- outline: 0;
-}
-
-.input-control.success input {
- border-color:green;
-}
-
-.input-control.error input {
- border-color: red;
- margin-left: 5px;
-}
-
-.input-control .errorMessage {
- color: $orange;
- font-size: 20px;
- height: 22px;
- margin-bottom: 25px;
-}
-
+.input-control .errorMessage{
+  color: red;
 }
 
 
+.input-control.success input{
+  border: 3px dashed green;
+}
 
 
 
 //         Last section forfait
 
-.sectionForfait{
-  // background-color: $blue;
-}
-
-
-
+// .sectionForfait{
+//   // background-color: $blue;
+// }
 
 .secMap{  //corige ca la cestpas un bon nom pour cette section
    

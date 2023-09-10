@@ -99,39 +99,83 @@
     <!-- ----------------------------------------FORM--------------------------------------------------------- -->
     <section class="container-fluid">
       <div class="secMapForm grid grid-cols-12 my-24">
-        <div class="form col-span-12 lg:col-start-2 lg:col-end-6 flex flex-col justify-center items-center">
-          <form class="px-6 bg-neutral-900 rounded-lg" id="form" action="txt/confimration.txt" method="get" onsubmit="return validateForm()" novalidate>
-            <h1 class="pt-4 text-center text-lg text-white mb-6">Formulaire de contact</h1>
-
-            <div class="sidetoside">
-              <div class="input-control">
-                <label for="prenom"></label>
-                <input class="text-neutral-900" id="prenom" name="prenom" type="text" required placeholder="Prenom" />
-                <div class="errorMessage"></div>
-              </div>
-
-              <div class="input-control">
-                <label for="famille"></label>
-                <input class="text-neutral-900" id="famille" name="famille" type="text" required placeholder="Nom de Famille" />
-                <div class="errorMessage"></div>
-              </div>
-            </div>
-
+        <!-- ----------------------------------------div du FORM--------------------------------------------------------- -->
+        <!-- <div class="form col-span-12 lg:col-start-2 lg:col-end-6 flex flex-col justify-center items-center">
+        
+          <form id="form" action="formFill.txt" method="get" onsubmit="return formValidation()" novalidate>
             <div class="input-control">
-              <label for="email"></label>
-              <input class="text-neutral-900" id="email" name="email" type="text" placeholder="E-mail" />
+              <label for="nom"></label>
+              <input id="nom" name="nom" type="text" required placeholder="entrez votre nom" />
               <div class="errorMessage"></div>
             </div>
 
-            <div class="input-control">
-              <label for="comentaires"></label>
-              <input class="text-neutral-900" id="comentaires" name="comentaires" type="text" required placeholder="Comentaires" />
-              <div class="errorMessage"></div>
-            </div>
             <input type="submit" />
           </form>
+      
+        </div> -->
+
+        <div class="form col-span-12 lg:col-start-2 lg:col-end-6 flex flex-col justify-center items-center">
+          <!-- ----------------------------------------FORM--------------------------------------------------------- -->
+          <form id="form" action="formFill.txt" method="get" onsubmit="return formValidation()" novalidate>
+            <!-- Champ Nom -->
+            <div class="input-control">
+              <label for="nom"></label>
+              <input id="nom" name="nom" type="text" required placeholder="Entrez votre nom" />
+              <div class="errorMessage"></div>
+            </div>
+
+            <!-- Champ Prénom -->
+            <div class="input-control">
+              <label for="prenom"></label>
+              <input id="prenom" name="prenom" type="text" required placeholder="Entrez votre prénom" />
+              <div class="errorMessage"></div>
+            </div>
+
+            <!-- Champ Âge -->
+            <div class="input-control">
+              <label for="age"></label>
+              <input id="age" name="age" type="number" required placeholder="Entrez votre âge" />
+              <div class="errorMessage"></div>
+            </div>
+
+            <!-- Champ Sexe -->
+            <div class="input-control">
+              <label for="sexe"></label>
+              <select id="sexe" name="sexe" required>
+                <option value="homme">Homme</option>
+                <option value="femme">Femme</option>
+                <option value="autre">Autre</option>
+              </select>
+              <div class="errorMessage"></div>
+            </div>
+
+            <!-- Champ Ville -->
+            <div class="input-control">
+              <label for="ville"></label>
+              <input id="ville" name="ville" type="text" required placeholder="Entrez votre ville" />
+              <div class="errorMessage"></div>
+            </div>
+
+            <!-- Champ E-mail -->
+            <div class="input-control">
+              <label for="email"></label>
+              <input id="email" name="email" type="email" required placeholder="Entrez votre adresse e-mail" />
+              <div class="errorMessage"></div>
+            </div>
+
+            <!-- Champ Lettre de Motivation -->
+            <div class="input-control">
+              <label for="motivation"></label>
+              <textarea id="motivation" name="motivation" required placeholder="Écrivez votre lettre de motivation ici"></textarea>
+              <div class="errorMessage"></div>
+            </div>
+
+            <input type="submit" value="Envoyer" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" />
+          </form>
+          <!-- ----------------------------------------input du FORM--------------------------------------------------------- -->
         </div>
 
+        <!-- ---------------------------------------------------------- -->
         <div class="pt-24 col-span-12 lg:col-start-6 lg:col-end-12">
           <img src="img/dog_poiting.png" alt="Chien quoi pointe notre equipe de travail" />
         </div>

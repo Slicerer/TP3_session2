@@ -27,7 +27,7 @@ const formValidation = () => {
         setSuccess(nom);
     }
 
-    // Valider les autres champs de la même manière...
+
 
     if (prenomValue === "") {
         setError(prenom, "Vous devez entrer votre prénom !");

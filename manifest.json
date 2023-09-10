@@ -1,14 +1,14 @@
 {
     "name": "PerfectumApp",
     "short_name": "Perfectum",
-    // "description": "web application d'un site d'articles Promotionnels",
-    "start_url": "index.html",  //https://slicerer.github.io/TP3_session2/
+    "description": "web application d'un site d'articles Promotionnels",
+    "start_url": "index.html", 
     "display": "standalone",
     "background_color": "#ffffff",  
     "theme_color": "#007bff",
     "icons": [
         {
-          "src": "TP3_session2/flav_app/maskable_icon_x48.png",    //ici tu vas probable devoir mettre ton nom sur git
+          "src": "TP3_session2/flav_app/maskable_icon_x48.png",  
           "sizes": "48x48",
           "type": "image/png",
           "purpose" : "maskable"

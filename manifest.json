@@ -5,7 +5,7 @@
     "start_url": "index.html", 
     "display": "standalone",
     "background_color": "#ffffff",  
-    "theme_color": "#007bff",
+    "theme_color": "#2EA3DC",
     "icons": [
         {
           "src": "flav_app/maskable_icon_x48.png",  
@@ -27,7 +27,7 @@
         },
    
         {
-            // attention celui la est un caré parfait ca l'air que ca prend ca ...
+       
           "src": "flav_app/maskable_icon_x144.png",
           "sizes": "144x144",
           "type": "image/png",
@@ -45,7 +45,26 @@
             "type": "image/png",
             "purpose": "maskable"
         }
-      ]
+      ],
+      "splash_pages": [
+        {
+            "src": "flav_app/maskable_icon_x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+
+        {
+            "src": "flav_app/maskable_icon_x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
   }
 
+
+
+     
+
+    
+     
 

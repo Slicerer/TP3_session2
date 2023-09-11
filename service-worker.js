@@ -49,7 +49,7 @@ self.addEventListener('fetch', (evt) => {
     .catch(() => {
     return caches.open(CACHE_NAME)
     .then((cache) => {
-    return cache.match('/Cochenille/PointNClick/offline.html' );      // change ca par tes propre valeurs   ***  return cache.match('/Cochenille/PointNClick/offline.html' );  *** JE DOIS CREER UN PAGE OFFLINE **** avec mon chemin
+    return cache.match('/Slicerer/TP3_session2/offline.html' );      // change ca par tes propre valeurs   ***  return cache.match('/Cochenille/PointNClick/offline.html' );  *** JE DOIS CREER UN PAGE OFFLINE **** avec mon chemin
     });
     })
     );

@@ -24,6 +24,15 @@
 
     <meta name="description" content="web application d'un site d'articles Promotionnels" />
     <meta name="theme-color" content="#2EA3DC" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js").then((reg) => {
+            console.log("Service worker registered.", reg);
+          });
+        });
+      }
+    </script>
     <!-- ----------------------------- webapp -->
     <title>Perfectum</title>
   </head>

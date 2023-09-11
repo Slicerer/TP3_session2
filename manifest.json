@@ -6,6 +6,7 @@
     "display": "standalone",
     "background_color": "#ffffff",  
     "theme_color": "#2EA3DC",
+    "id": "/TP3_session2/index.html",
     "icons": [
         {
           "src": "flav_app/maskable_icon_x48.png",  

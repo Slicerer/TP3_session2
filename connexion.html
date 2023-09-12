@@ -14,7 +14,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js" defer></script>
     <link rel="stylesheet" href="style/css/main.css" />
 
-    <!-- --------------------web app -->
     <link rel="manifest" href="manifest.json" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
@@ -24,7 +23,17 @@
 
     <meta name="description" content="web application d'un site d'articles Promotionnels" />
     <meta name="theme-color" content="#2EA3DC" />
-    <!-- ----------------------------- webapp -->
+
+    <script src="service-worker.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js").then((reg) => {
+            console.log("Service worker registered.", reg);
+          });
+        });
+      }
+    </script>
 
     <title>Perfectum</title>
   </head>
@@ -143,7 +152,7 @@
         <span class="footer__droit--span block text-2xl text-white text-center">Tout droit réservé</span>
       </div>
     </footer>
-
+    <script src="install.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
   </body>
 </html>

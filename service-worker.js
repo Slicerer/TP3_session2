@@ -1,4 +1,4 @@
-const CACHE_NAME = 'static-cache-v8';
+const CACHE_NAME = 'static-cache-v9';
 
 
 

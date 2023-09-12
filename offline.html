@@ -5,8 +5,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="manifest" href="manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+    <meta name="apple-mobile-web-app-title" content="PerfectumApp" />
+    <!-- slash ou pas slash au debut du chemin cest pas claire  -->
+    <link rel="apple-touch-icon" href="/flav_app/maskable_icon_x72.png" />
+
+    <meta name="description" content="web application d'un site d'articles Promotionnels" />
+    <meta name="theme-color" content="#2EA3DC" />
+
+    <script src="service-worker.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js").then((reg) => {
+            console.log("Service worker registered.", reg);
+          });
+        });
+      }
+    </script>
   </head>
   <body>
     <h1>dude you are offLINE !!</h1>
+    <script src="install.js"></script>
   </body>
 </html>

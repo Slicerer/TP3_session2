@@ -1,13 +1,14 @@
-const CACHE_NAME = 'static-cache-v7';
+const CACHE_NAME = 'static-cache-v8';
 
 
 
 const FILES_TO_CACHE = [
     'offline.html', //*** cest tu suposé detre vide ? ou de mettre tout les page html TOUT MES FICHIER ETC ETC ?***
     'index.html',
-    'offline.html',
     'Contact.html',
     'services.html',  //***continue de tout ajouter ici***
+    'install.js',
+    'service-worker.js'
 ];
     
     self.addEventListener('install', (evt) => {

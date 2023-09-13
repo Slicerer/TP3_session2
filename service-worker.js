@@ -1,14 +1,13 @@
-const CACHE_NAME = 'static-cache-v12';
+const CACHE_NAME = 'static-cache-v13';
 const FILES_TO_CACHE = [
     'offline.html',
     'index.html',
     'Contact.html',
     'services.html',
     'install.js',
-    'service-worker.js',
-    '/flav_app/maskable_icon_x72.png',
+    'flav_app',
     'img',
-    '/style/css/main.css'
+    'style/css/main.css'
 ];
 
 self.addEventListener('install', (evt) => {

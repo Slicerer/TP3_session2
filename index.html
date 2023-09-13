@@ -31,7 +31,10 @@
         window.addEventListener("load", () => {
           navigator.serviceWorker.register("service-worker.js").then((reg) => {
             console.log("Service worker registered.", reg);
-          });
+          })
+          .catch((error) => {
+          console.error("Service worker registration failed:", error);
+        });
         });
       }
     </script>
@@ -79,7 +82,7 @@
                 <div id="dropdownNavbar" class="z-10 hidden font-normal bg-neutral-900 divide-y divide-gray-100 rounded-lg shadow w-44">
                   <ul class="py-2 text-sm lg:text-base text-gray-70" aria-labelledby="dropdownLargeButton">
                     <li>
-                      <a href="commande.html" class="block px-4 py-2 text-white hover:bg-gray-700 button-active">Commande en ligne</a>
+                      <a href="commande.html" class="block px-4 py-2 text-white hover:bg-gray-700 ">Commande en ligne</a>
                     </li>
 
                     <li>

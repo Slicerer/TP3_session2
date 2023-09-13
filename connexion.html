@@ -30,7 +30,10 @@
         window.addEventListener("load", () => {
           navigator.serviceWorker.register("service-worker.js").then((reg) => {
             console.log("Service worker registered.", reg);
-          });
+          })
+          .catch((error) => {
+          console.error("Service worker registration failed:", error);
+        });
         });
       }
     </script>
@@ -101,6 +104,10 @@
         </div>
       </nav>
     </header>
+
+    <section>
+      <h1>test</h1>
+    </section>
 
     <section class="bg-white dark:bg-gray-900 h-screen">
       <div class="py-8 px-4 mx-auto max-w-screen-md text-center lg:py-16 lg:px-12">

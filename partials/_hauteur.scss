@@ -1,4 +1,3 @@
-//s corespond a rien tailwin
 $desktop-min-s: 0px;
 $desktop-max-s: 639px;
 $desktop-height-s: 455px;
@@ -50,30 +49,4 @@ $desktop-height-xxl: 1000px;
     @include h-xl;
     @include h-xxl;
   }
-
-
-
-
-
-
-    // //s
-  //   $desktop-min-s: 0px;
-  //   $desktop-max-s: 639px;
-  //   $desktop-height-s: 500px;
-  // //small
-  //   $desktop-min-m: 640px;
-  //   $desktop-max-m: 767px;
-  //   $desktop-height-m: 650px;
-  // //med
-  //   $desktop-min-l: 768px;
-  //   $desktop-max-l: 1023px;
-  //   $desktop-height-l: 500px;
-  // //large
-  //   $desktop-min-xl: 1024px;
-  //   $desktop-max-xl: 1439px;
-  //   $desktop-height-xl: 700px;
-  // //xl
-  //   $desktop-min-xxl: 1440px;
-  //   $desktop-max-xxl: 5000px;
-  //   $desktop-height-xxl: 875px;
 

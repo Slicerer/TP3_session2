@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Praise&display=swap" rel="stylesheet" />
+    <link rel="icon" href="flav_app/email.png" type="image/png">
+   
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,13 +20,12 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
     <meta name="apple-mobile-web-app-title" content="PerfectumApp" />
-    <!-- slash ou pas slash au debut du chemin cest pas claire  -->
-    <link rel="apple-touch-icon" href="/flav_app/maskable_icon_x72.png" />
+    <link rel="apple-touch-icon" href="/flav_app/maskable_icon_x72.png" aria-label="Application icon" />
 
     <meta name="description" content="web application d'un site d'articles Promotionnels" />
     <meta name="theme-color" content="#2EA3DC" />
 
-    <script src="service-worker.js"></script>
+    <script src="service-worker.js" aria-label="Service Worker"></script>
     <script>
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
@@ -35,10 +36,11 @@
       }
     </script>
 
-    <script src="script.js" defer></script>
+    <script src="script.js" defer aria-label="Script principal"></script>
 
     <title>Perfectum</title>
   </head>
+
   <body>
     <header>
       <nav class="bg-neutral-800 border-gray-200">
@@ -105,109 +107,105 @@
     </header>
 
     <section>
-      <img src="img/wave_bg.png" alt="image de fond avec des vagues" />
+      <img src="img/wave_bg.png" alt="Image de fond avec des vagues" />
     </section>
-
+    
     <section class="handShake flex flex-col justify-center items-center translate -translate-y-2">
       <div class="sectionForm flex flex-col justify-center items-center my-14">
-        <h1 class="text-center text-3xl md:text-4xl lg:text-6xl my-16 text-white"><a href="mailto:perfectum@outlook.fr" class="text-neutral-900 hover:underline">Contactez</a> Notre Équipe de Confiance</h1>
-
+        <h1 class="text-center text-3xl md:text-4xl lg:text-6xl my-16 text-white">
+          <a href="mailto:perfectum@outlook.fr" class="text-neutral-900 hover:underline">Contactez</a> Notre Équipe de Confiance
+        </h1>
+    
         <div class="w-7/12">
-          <img class="rounded-xl" src="img/handshake.png" alt="" />
+          <img class="rounded-xl" src="img/handshake.png" alt="Image d'une poignée de main" />
         </div>
       </div>
     </section>
-
-    <!-- ----------------------------------------FORM--------------------------------------------------------- -->
+    
+   
     <section class="container-fluid">
       <div class="secMapForm grid grid-cols-12 my-24">
         <div class="form col-span-12 lg:col-start-2 lg:col-end-6 flex flex-col justify-center items-center">
           <h2 class="text-3xl text-center">Joignez-vous à l'équipe <span>Perfectum !</span></h2>
-          <!-- ----------------------------------------FORM--------------------------------------------------------- -->
+    
           <form class="bg-gray-800 w-10/12 p-6 mx-auto my-6 rounded-lg shadow-lg" id="form" action="formFill.txt" method="get" onsubmit="return formValidation()" novalidate>
-            <!-- Champ Nom -->
+           
             <div class="input-control my-4">
               <label for="nom" class="text-white sr-only">Nom</label>
-              <input id="nom" name="nom" type="text" required placeholder="Entrez votre nom" class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white" />
+              <input id="nom" name="nom" type="text" required placeholder="Entrez votre nom" class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white" aria-label="Nom" />
               <div class="errorMessage text-red-500"></div>
             </div>
-
-            <!-- Champ Prénom -->
+    
+         
             <div class="input-control my-4">
               <label for="prenom" class="text-white sr-only">Prénom</label>
-              <input id="prenom" name="prenom" type="text" required placeholder="Entrez votre prénom" class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white" />
+              <input id="prenom" name="prenom" type="text" required placeholder="Entrez votre prénom" class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white" aria-label="Prénom" />
               <div class="errorMessage text-red-500"></div>
             </div>
-
-            <!-- Champ Âge -->
+    
+          
             <div class="input-control my-4">
               <label for="age" class="text-white sr-only">Âge</label>
-              <input id="age" name="age" type="number" required placeholder="Entrez votre âge" class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white" />
+              <input id="age" name="age" type="number" required placeholder="Entrez votre âge" class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white" aria-label="Âge" />
               <div class="errorMessage text-red-500"></div>
             </div>
-
-            <!-- Champ Sexe -->
+    
+          
             <div class="input-control my-4">
               <label for="sexe" class="text-white sr-only">Sexe</label>
-              <select id="sexe" name="sexe" required class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white">
+              <select id="sexe" name="sexe" required class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white" aria-label="Sexe">
                 <option value="homme">Homme</option>
                 <option value="femme">Femme</option>
                 <option value="autre">Autre</option>
               </select>
               <div class="errorMessage text-red-500"></div>
             </div>
-
-            <!-- Champ Ville -->
+    
+          
             <div class="input-control my-4">
               <label for="ville" class="text-white sr-only">Ville</label>
-              <input id="ville" name="ville" type="text" required placeholder="Entrez votre ville" class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white" />
+              <input id="ville" name="ville" type="text" required placeholder="Entrez votre ville" class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white" aria-label="Ville" />
               <div class="errorMessage text-red-500"></div>
             </div>
-
-            <!-- Champ E-mail -->
+    
+         
             <div class="input-control my-4">
               <label for="email" class="text-white sr-only">E-mail</label>
-              <input id="email" name="email" type="email" required placeholder="Entrez votre adresse e-mail" class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white" />
+              <input id="email" name="email" type="email" required placeholder="Entrez votre adresse e-mail" class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white" aria-label="E-mail" />
               <div class="errorMessage text-red-500"></div>
             </div>
-
-            <!-- Champ Lettre de Motivation -->
+    
+      
             <div class="input-control my-4">
               <label for="motivation" class="text-white sr-only">Lettre de Motivation</label>
-              <textarea id="motivation" name="motivation" required placeholder="Écrivez votre lettre de motivation ici" class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white"></textarea>
+              <textarea id="motivation" name="motivation" required placeholder="Écrivez votre lettre de motivation ici" class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white" aria-label="Lettre de Motivation"></textarea>
               <div class="errorMessage text-red-500"></div>
             </div>
-
-            <!-- Champ Diplôme -->
+    
             <div id="diplome" class="input-control my-4">
               <label class="text-white">Si vous n'avez pas de <strong class="text-red-600">diplôme</strong> la lettre de motivation suffira !</label>
               <div class="flex">
-                <input type="radio" id="secondaire" name="diplome" value="secondaire" required class="mr-2" />
+                <input type="radio" id="secondaire" name="diplome" value="secondaire" required class="mr-2" aria-label="Secondaire 4" />
                 <label for="secondaire" class="text-white mr-4">Secondaire 4</label>
-
-                <input type="radio" id="cegep" name="diplome" value="cegep" required class="mr-2" />
+    
+                <input type="radio" id="cegep" name="diplome" value="cegep" required class="mr-2" aria-label="Cégep" />
                 <label for="cegep" class="text-white mr-4">Cégep</label>
-
-                <input type="radio" id="universitaire" name="diplome" value="universitaire" required class="mr-2" />
+    
+                <input type="radio" id="universitaire" name="diplome" value="universitaire" required class="mr-2" aria-label="Universitaire" />
                 <label for="universitaire" class="text-white">Universitaire</label>
               </div>
               <div class="errorMessage text-red-500"></div>
             </div>
-
+    
             <input type="submit" value="Envoyer" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer" />
           </form>
-
-          <!-- ----------------------------------------input du FORM--------------------------------------------------------- -->
         </div>
-
-        <!-- ---------------------------------------------------------- -->
+    
         <div class="pt-24 col-span-12 lg:col-start-6 lg:col-end-12">
-          <img src="img/dog_poiting.png" alt="Chien quoi pointe notre equipe de travail" />
+          <img src="img/dog_poiting.png" alt="Chien qui pointe notre équipe de travail" />
         </div>
-      </div>
+    
     </section>
-
-    <!-- --------------------------------------------------------------------------------------------------- -->
 
     <section class="sectionMap container-fluid">
       <div class="secMap h-full md:grid md:grid-cols-12 py-16 md:py-24">
@@ -220,14 +218,15 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             title="Google Maps - Emplacement de Verduonig Jenins, Suisse"
+            aria-label="Emplacement de Verduonig Jenins, Suisse"
           ></iframe>
         </div>
-
+    
         <div class="col-start-1 col-end-13 md:col-start-8 md:col-end-12 flex flex-col justify-center items-center text-center text-white text-xl xl:text-2xl">
           <h1 class="my-4 lg:my-6 lg:text-4xl">Contactez-nous pour plus d'info</h1>
-          <a class="my-4 lg:my-6" href="tel:+5149669335"><span class="pr-2 text-black">Par Téléphone; </span>514 966-9335</a>
-          <a class="my-4 lg:my-6" href="mailto:perfectum@outlook.fr"><span class="pr-2 text-black">Par E-mail; </span>perfectum@outlook.fr</a>
-          <a class="my-4 lg:my-6" href="https://www.facebook.com/Raphael.Annabelle/"><span class="text-black mr-2">Par;</span> FaceBook</a>
+          <a class="my-4 lg:my-6" href="tel:+5149669335" aria-label="Appeler au 514 966-9335"><span class="pr-2 text-black">Par Téléphone; </span>514 966-9335</a>
+          <a class="my-4 lg:my-6" href="mailto:perfectum@outlook.fr" aria-label="Envoyer un e-mail à perfectum@outlook.fr"><span class="pr-2 text-black">Par E-mail; </span>perfectum@outlook.fr</a>
+          <a class="my-4 lg:my-6" href="https://www.facebook.com/Raphael.Annabelle/" aria-label="Visiter notre page Facebook"><span class="text-black mr-2">Par;</span> FaceBook</a>
         </div>
       </div>
     </section>
@@ -282,7 +281,7 @@
             </ul>
             <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900">Get started</a>
           </div>
-          <!-- Pricing Card -->
+
           <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
             <h3 class="mb-4 text-2xl font-semibold">Company</h3>
             <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Relevant for multiple users, extended & premium support.</p>
@@ -290,7 +289,7 @@
               <span class="mr-2 text-5xl font-extrabold">$99</span>
               <span class="text-gray-500 dark:text-gray-400" dark:text-gray-400>/month</span>
             </div>
-            <!-- List -->
+       
             <ul role="list" class="mb-8 space-y-4 text-left">
               <li class="flex items-center space-x-3">
                 <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -404,7 +403,7 @@
             </li>
           </ul>
         </div>
-        <!-- <a href="mailto:adresse.email@example.com">Envoyer un e-mail</a> -->
+
         <hr class="my-4 lg:my-6 border-white sm:mx-auto lg:my-8" />
         <span class="footer__droit--span block text-2xl text-white text-center">Tout droit réservé</span>
       </div>

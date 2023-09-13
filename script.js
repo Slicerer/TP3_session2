@@ -27,8 +27,6 @@ const formValidation = () => {
         setSuccess(nom);
     }
 
-
-
     if (prenomValue === "") {
         setError(prenom, "Vous devez entrer votre prénom !");
         noError = false;
@@ -106,3 +104,7 @@ const setSuccess = (element) => {
     inputControl.classList.remove("error");
     inputControl.classList.add("success");
 };
+
+
+
+

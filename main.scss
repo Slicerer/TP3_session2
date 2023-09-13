@@ -20,7 +20,7 @@ body {
 
 .divNavBar {
   background-color: $blue;
-  .button-active{
+  .button-active {
     color: black;
   }
 }
@@ -30,10 +30,10 @@ body {
 .secCarousselle {
   @include responsive-heights;
   background-color: rgb(46, 143, 220);
-  .ombre{
-    box-shadow: 0px 20px rgba($color: rgb(255, 255, 255), $alpha: 0.3)
+  .ombre {
+    box-shadow: 0px 20px rgba($color: rgb(255, 255, 255), $alpha: 0.3);
   }
-  h1{
+  h1 {
     font-family: $tittle_font;
   }
 }
@@ -70,7 +70,6 @@ body {
 
 .footer__droit--span {
   font-family: $font--button;
-  
 }
 
 // Page de service style
@@ -100,8 +99,6 @@ body {
     }
   }
 }
-
-
 
 .sectionWeb {
   height: 800px;
@@ -137,73 +134,61 @@ body {
   }
 }
 
-.sectionVideos{
-   background-color: $orange;
-   min-height: 800px;
+.sectionVideos {
+  background-color: $orange;
+  min-height: 800px;
 
-   h2{
+  h2 {
     font-family: $tittle_font;
-   }
+  }
 }
 
 // Fin page de service
 
-//page de contact
+// Page de contact
 
-.handShake{
-   
+.handShake {
   background-color: $blue;
 
-  h1{
-   font-family: $tittle_font;
+  h1 {
+    font-family: $tittle_font;
   }
 
-  img{
-     box-shadow: 14px 16px rgba($color: rgb(0, 0, 0), $alpha: 0.9);
-    }
+  img {
+    box-shadow: 14px 16px rgba($color: rgb(0, 0, 0), $alpha: 0.9);
+  }
 }
 
-//fin de la page de contact
+// Fin de la page de contact
 
+// Début form
 
-// debut form
-
-.secMapForm{
- h2{
-  font-family: $tittle_font;
- }
- span{
-  color: $blue;
-  font-family: $brand_font;
- }
+.secMapForm {
+  h2 {
+    font-family: $tittle_font;
+  }
+  span {
+    color: $blue;
+    font-family: $brand_font;
+  }
 }
 
-.input-control.error input{
+.input-control.error input {
   border-color: 3px dashed red;
 }
 
-.input-control .errorMessage{
+.input-control .errorMessage {
   color: red;
 }
 
-
-.input-control.success input{
+.input-control.success input {
   border: 3px dashed green;
 }
 
-
-
-//         Last section forfait
-
-// .sectionForfait{
-//   // background-color: $blue;
-// }
-
-.secMap{  //corige ca la cestpas un bon nom pour cette section
-   
+.secMap {
   background-color: $blue;
 
-  h1{
-   font-family: $tittle_font;
+  h1 {
+    font-family: $tittle_font;
   }
 }

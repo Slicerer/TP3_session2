@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Praise&display=swap" rel="stylesheet" />
+    <link rel="icon" href="flav_app/website.png" type="image/png">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,12 +17,11 @@
 
     <!-- --------------------web app début -->
     <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="/flav_app/maskable_icon_x72.png" />
+
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
     <meta name="apple-mobile-web-app-title" content="PerfectumApp" />
-    <!-- slash ou pas slash au debut du chemin cest pas claire  -->
-    <link rel="apple-touch-icon" href="/flav_app/maskable_icon_x72.png" />
-
     <meta name="description" content="web application d'un site d'articles Promotionnels" />
     <meta name="theme-color" content="#2EA3DC" />
 
@@ -36,7 +36,6 @@
       }
     </script>
 
-    <!-- ----------------------------- webapp  fin-->
     <title>Perfectum</title>
   </head>
   <body>
@@ -106,43 +105,40 @@
     </header>
 
     <section class="transform">
-      <!-- workin here on my instalation button  web app-->
       <button class="text-white hover:bg-green-600 p-2 m-2 bg-slate-700 rounded-lg nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Install app</button>
-      <!-- workin here on my instalation button -->
+
       <img src="img/wave_bg.png" alt="image de fond avec des vagues" />
     </section>
 
-    <!-- -------------------------------------------WORK HERE------------------------------------------- -->
     <section class="secCarousselle flex flex-col justify-center items-center translate -translate-y-2">
       <div id="controls-carousel" class="w-10/12 h-full divCarousselle container-fluid grid grid-cols-12" data-carousel="static">
-        <!-- Carousel wrapper -->
         <div class="relative overflow-hidden col-start-1 col-end-13 md:col-start-2 md:col-end-12 lg:col-start-3 lg:col-end-11 2xl:col-start-4 2xl:col-end-10 divCarousselle__cadre">
           <h1 class="text-center lg:translate-y-12 text-2xl lg:text-4xl">cliquez pour dérouler !</h1>
-          <!-- Item 1 -->
+
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="img/Broderie.png" class="ombre rounded-xl absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Véhicule Lettré" />
           </div>
-          <!-- Item 2 -->
+
           <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
             <img src="img/Lettrage.png" class="ombre rounded-xl absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
           </div>
-          <!-- Item 3 -->
+
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="img/Numerique.png" class="ombre rounded-xl absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
           </div>
-          <!-- Item 4 -->
+
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="img/Serigraphie.png" class="ombre rounded-xl absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
           </div>
-          <!-- Item 5 -->
+
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="img/Sublimation.png" class="ombre rounded-xl absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
           </div>
-          <!--item6-->
+
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="img/Impression_GF.png" class="ombre rounded-xl absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
           </div>
-          <!--item7-->
+
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="img/informatique.png" class="ombre rounded-xl absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
           </div>

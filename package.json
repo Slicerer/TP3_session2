@@ -1,4 +1,4 @@
-{
+{    
   "name": "tp3_session2",
   "version": "1.0.0",
   "description": "",
@@ -17,3 +17,6 @@
     "tailwind": "^4.0.0"
   }
 }
+
+
+// jai touché a la touche debug ici jespere ca cause pas de probleme

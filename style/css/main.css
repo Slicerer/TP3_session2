@@ -197,4 +197,14 @@ body {
 }
 .secMap h1 {
   font-family: "Lobster", cursive;
+}
+
+.sectionForfait h2 {
+  font-family: "Lobster", cursive;
+}
+.sectionForfait h3 {
+  font-family: "Lobster", cursive;
+}
+.sectionForfait p {
+  font-family: "Libre Baskerville";
 }/*# sourceMappingURL=main.css.map */

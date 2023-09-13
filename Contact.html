@@ -97,9 +97,10 @@
         </div>
       </nav>
     </header>
-    <section>
-      <img src="img/wave_bg.png" alt="Image de fond avec des vagues." />
-    </section>
+    <section class="transform">
+      <button class="text-white hover:bg-green-600 p-2 m-2 bg-slate-700 rounded-lg nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Install app</button>
+   <img src="img/wave_bg.png" alt="Image de fond avec des vagues" />
+ </section>
     <section class="handShake flex flex-col justify-center items-center translate -translate-y-2">
       <div class="sectionForm flex flex-col justify-center items-center my-14">
         <h1 class="text-center text-3xl md:text-4xl lg:text-6xl my-16 text-white">
@@ -177,16 +178,14 @@
     <section class="sectionMap container-fluid">
       <div class="secMap h-full md:grid md:grid-cols-12 py-16 md:py-24">
         <div class="col-start-1 col-end-13 md:col-start-2 md:col-end-7 h-96 flex flex-col justify-center items-center mb-16 md:mb-0">
-          <iframe
-            class="w-10/12 h-full"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2535009.474859588!2d8.318801326745659!3d45.856068652113855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4784ca4f995afb17%3A0xa3943c035c7e8327!2sVerduonig%202b%2C%207307%20Jenins%2C%20Switzerland!5e0!3m2!1sen!2sca!4v1684632424599!5m2!1sen!2sca"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Google Maps - Emplacement de Verduonig Jenins, Suisse"
-            aria-label="Emplacement de Verduonig Jenins, Suisse"
-          ></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22219.59784117132!2d-73.31491040297891!3d45.88231775301318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc8ed5d22b4fbff%3A0x9ab6830d002d13a2!2sLavaltrie%2C%20QC!5e0!3m2!1sen!2sca!4v1694626389234!5m2!1sen!2sca"
+          class="w-10/12 h-full"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          aria-label="Emplacement de Lavaltrie."
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
         </div>
         <div class="col-start-1 col-end-13 md:col-start-8 md:col-end-12 flex flex-col justify-center items-center text-center text-white text-xl xl:text-2xl">
           <h1 class="my-4 lg:my-6 lg:text-4xl">Contactez-nous pour plus d'info</h1>
@@ -199,136 +198,138 @@
     <section class="sectionForfait">
       <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-          <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white">Designed for business teams like yours</h2>
-          <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+          <h2 class="mb-4 text-3xl md:text-5xl tracking-tight font-extrabold text-gray-900">Designed for business teams like yours</h2>
+          <p class="mb-5 font-light text-black sm:text-xl">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
         </div>
         <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
           <!-- Pricing Card -->
-          <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-            <h3 class="mb-4 text-2xl font-semibold">Starter</h3>
-            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best option for personal use & for your next project.</p>
+          <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-neutral-900 rounded-lg border border-gray-100 shadow xl:p-8">
+            <h3 class="mb-4 text-2xl lg:text-4xl font-semibold">Starter</h3>
+            <p class="font-light text-white sm:text-lg">Best option for personal use & for your next project.</p>
             <div class="flex justify-center items-baseline my-8">
               <span class="mr-2 text-5xl font-extrabold">$29</span>
-              <span class="text-gray-500 dark:text-gray-400">/month</span>
+              <span class="text-white">/month</span>
             </div>
             <!-- List -->
             <ul role="list" class="mb-8 space-y-4 text-left">
               <li class="flex items-center space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
                 <span>Individual configuration</span>
               </li>
               <li class="flex items-center space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
                 <span>No setup, or hidden fees</span>
               </li>
               <li class="flex items-center space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
                 <span>Team size: <span class="font-semibold">1 developer</span></span>
               </li>
               <li class="flex items-center space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
                 <span>Premium support: <span class="font-semibold">6 months</span></span>
               </li>
               <li class="flex items-center space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
                 <span>Free updates: <span class="font-semibold">6 months</span></span>
               </li>
             </ul>
-            <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900">Get started</a>
+            <a href="https://www.facebook.com/Raphael.Annabelle/" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Get started</a>
           </div>
-          <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-            <h3 class="mb-4 text-2xl font-semibold">Company</h3>
-            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Relevant for multiple users, extended & premium support.</p>
+
+          <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-neutral-900 rounded-lg border border-gray-900 shadow xl:p-8">
+            <h3 class="mb-4 text-2xl lg:text-4xl font-semibold">Company</h3>
+            <p class="font-light text-white sm:text-lg">Relevant for multiple users, extended & premium support.</p>
             <div class="flex justify-center items-baseline my-8">
               <span class="mr-2 text-5xl font-extrabold">$99</span>
-              <span class="text-gray-500 dark:text-gray-400">/month</span>
+              <span class="text-white">/month</span>
             </div>
-            <ul role="list" class="mb-8 space-y-4 text-left">
+            <ul role="list" class="mb-8 space-y-4 text-left text-white">
               <li class="flex items-center space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
                 <span>Individual configuration</span>
               </li>
               <li class="flex items-center space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
                 <span>No setup, or hidden fees</span>
               </li>
               <li class="flex items-center space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
                 <span>Team size: <span class="font-semibold">10 developers</span></span>
               </li>
               <li class="flex items-center space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
                 <span>Premium support: <span class="font-semibold">24 months</span></span>
               </li>
               <li class="flex items-center space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
                 <span>Free updates: <span class="font-semibold">24 months</span></span>
               </li>
             </ul>
-            <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900">Get started</a>
+            <a href="https://www.facebook.com/Raphael.Annabelle/" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Get started</a>
           </div>
+
           <!-- Pricing Card -->
-          <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-            <h3 class="mb-4 text-2xl font-semibold">Enterprise</h3>
-            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best for large scale uses and extended redistribution rights.</p>
+          <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-neutral-900 rounded-lg border border-gray-100 shadow xl:p-8">
+            <h3 class="mb-4 text-2xl lg:text-4xl font-semibold">Enterprise</h3>
+            <p class="font-light text-white sm:text-lg">Best for large scale uses and extended redistribution rights.</p>
             <div class="flex justify-center items-baseline my-8">
               <span class="mr-2 text-5xl font-extrabold">$499</span>
-              <span class="text-gray-500 dark:text-gray-400">/month</span>
+              <span class="text-white">/month</span>
             </div>
             <!-- List -->
             <ul role="list" class="mb-8 space-y-4 text-left">
               <li class="flex items-center space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
                 <span>Individual configuration</span>
               </li>
               <li class="flex items-center space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
                 <span>No setup, or hidden fees</span>
               </li>
               <li class="flex items-center space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
                 <span>Team size: <span class="font-semibold">100+ developers</span></span>
               </li>
               <li class="flex items-center space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
                 <span>Premium support: <span class="font-semibold">36 months</span></span>
               </li>
               <li class="flex items-center space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
                 <span>Free updates: <span class="font-semibold">36 months</span></span>
               </li>
             </ul>
-            <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900">Get started</a>
+            <a href="https://www.facebook.com/Raphael.Annabelle/" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Get started</a>
           </div>
         </div>
       </div>

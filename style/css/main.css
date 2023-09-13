@@ -15,6 +15,9 @@ body {
 .divNavBar {
   background-color: rgb(46, 163, 220);
 }
+.divNavBar .button-active {
+  color: black;
+}
 
 .secCarousselle {
   background-color: rgb(46, 143, 220);
@@ -46,6 +49,9 @@ body {
 }
 .secCarousselle .ombre {
   box-shadow: 0px 20px rgba(255, 255, 255, 0.3);
+}
+.secCarousselle h1 {
+  font-family: "Lobster", cursive;
 }
 
 .secPresentation {
@@ -156,6 +162,14 @@ body {
 }
 .handShake img {
   box-shadow: 14px 16px rgba(0, 0, 0, 0.9);
+}
+
+.secMapForm h2 {
+  font-family: "Lobster", cursive;
+}
+.secMapForm span {
+  color: rgb(46, 163, 220);
+  font-family: "Praise", cursive;
 }
 
 .input-control.error input {

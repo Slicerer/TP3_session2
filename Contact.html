@@ -63,7 +63,7 @@
           <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
             <ul class="flex flex-col font-medium p-4 md:p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 divNavBar">
               <li>
-                <a href="index.html" class="block py-2 pl-3 pr-4 text-white bg-neutral-900 rounded md:bg-transparent md:p-0" aria-current="page">Accueil</a>
+                <a href="index.html" class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0" aria-current="page">Accueil</a>
               </li>
               <li>
                 <button
@@ -96,7 +96,7 @@
                 <a href="services.html" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Services</a>
               </li>
               <li>
-                <a href="Contact.html" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact</a>
+                <a href="Contact.html" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 button-active">Contact</a>
               </li>
             </ul>
           </div>
@@ -121,79 +121,82 @@
     <!-- ----------------------------------------FORM--------------------------------------------------------- -->
     <section class="container-fluid">
       <div class="secMapForm grid grid-cols-12 my-24">
-        <!-- ----------------------------------------div du FORM--------------------------------------------------------- -->
-        <!-- <div class="form col-span-12 lg:col-start-2 lg:col-end-6 flex flex-col justify-center items-center">
-        
-          <form id="form" action="formFill.txt" method="get" onsubmit="return formValidation()" novalidate>
-            <div class="input-control">
-              <label for="nom"></label>
-              <input id="nom" name="nom" type="text" required placeholder="entrez votre nom" />
-              <div class="errorMessage"></div>
-            </div>
-
-            <input type="submit" />
-          </form>
-      
-        </div> -->
-
         <div class="form col-span-12 lg:col-start-2 lg:col-end-6 flex flex-col justify-center items-center">
+          <h2 class="text-3xl text-center">Joignez-vous à l'équipe <span>Perfectum !</span></h2>
           <!-- ----------------------------------------FORM--------------------------------------------------------- -->
-          <form id="form" action="formFill.txt" method="get" onsubmit="return formValidation()" novalidate>
+          <form class="bg-gray-800 w-10/12 p-6 mx-auto my-6 rounded-lg shadow-lg" id="form" action="formFill.txt" method="get" onsubmit="return formValidation()" novalidate>
             <!-- Champ Nom -->
-            <div class="input-control">
-              <label for="nom"></label>
-              <input id="nom" name="nom" type="text" required placeholder="Entrez votre nom" />
-              <div class="errorMessage"></div>
+            <div class="input-control my-4">
+              <label for="nom" class="text-white sr-only">Nom</label>
+              <input id="nom" name="nom" type="text" required placeholder="Entrez votre nom" class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white" />
+              <div class="errorMessage text-red-500"></div>
             </div>
 
             <!-- Champ Prénom -->
-            <div class="input-control">
-              <label for="prenom"></label>
-              <input id="prenom" name="prenom" type="text" required placeholder="Entrez votre prénom" />
-              <div class="errorMessage"></div>
+            <div class="input-control my-4">
+              <label for="prenom" class="text-white sr-only">Prénom</label>
+              <input id="prenom" name="prenom" type="text" required placeholder="Entrez votre prénom" class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white" />
+              <div class="errorMessage text-red-500"></div>
             </div>
 
             <!-- Champ Âge -->
-            <div class="input-control">
-              <label for="age"></label>
-              <input id="age" name="age" type="number" required placeholder="Entrez votre âge" />
-              <div class="errorMessage"></div>
+            <div class="input-control my-4">
+              <label for="age" class="text-white sr-only">Âge</label>
+              <input id="age" name="age" type="number" required placeholder="Entrez votre âge" class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white" />
+              <div class="errorMessage text-red-500"></div>
             </div>
 
             <!-- Champ Sexe -->
-            <div class="input-control">
-              <label for="sexe"></label>
-              <select id="sexe" name="sexe" required>
+            <div class="input-control my-4">
+              <label for="sexe" class="text-white sr-only">Sexe</label>
+              <select id="sexe" name="sexe" required class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white">
                 <option value="homme">Homme</option>
                 <option value="femme">Femme</option>
                 <option value="autre">Autre</option>
               </select>
-              <div class="errorMessage"></div>
+              <div class="errorMessage text-red-500"></div>
             </div>
 
             <!-- Champ Ville -->
-            <div class="input-control">
-              <label for="ville"></label>
-              <input id="ville" name="ville" type="text" required placeholder="Entrez votre ville" />
-              <div class="errorMessage"></div>
+            <div class="input-control my-4">
+              <label for="ville" class="text-white sr-only">Ville</label>
+              <input id="ville" name="ville" type="text" required placeholder="Entrez votre ville" class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white" />
+              <div class="errorMessage text-red-500"></div>
             </div>
 
             <!-- Champ E-mail -->
-            <div class="input-control">
-              <label for="email"></label>
-              <input id="email" name="email" type="email" required placeholder="Entrez votre adresse e-mail" />
-              <div class="errorMessage"></div>
+            <div class="input-control my-4">
+              <label for="email" class="text-white sr-only">E-mail</label>
+              <input id="email" name="email" type="email" required placeholder="Entrez votre adresse e-mail" class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white" />
+              <div class="errorMessage text-red-500"></div>
             </div>
 
             <!-- Champ Lettre de Motivation -->
-            <div class="input-control">
-              <label for="motivation"></label>
-              <textarea id="motivation" name="motivation" required placeholder="Écrivez votre lettre de motivation ici"></textarea>
-              <div class="errorMessage"></div>
+            <div class="input-control my-4">
+              <label for="motivation" class="text-white sr-only">Lettre de Motivation</label>
+              <textarea id="motivation" name="motivation" required placeholder="Écrivez votre lettre de motivation ici" class="w-full p-2 rounded bg-gray-200 text-black focus:outline-none focus:bg-white"></textarea>
+              <div class="errorMessage text-red-500"></div>
             </div>
 
-            <input type="submit" value="Envoyer" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" />
+            <!-- Champ Diplôme -->
+            <div id="diplome" class="input-control my-4">
+              <label class="text-white">Si vous n'avez pas de <strong class="text-red-600">diplôme</strong> la lettre de motivation suffira !</label>
+              <div class="flex">
+                <input type="radio" id="secondaire" name="diplome" value="secondaire" required class="mr-2" />
+                <label for="secondaire" class="text-white mr-4">Secondaire 4</label>
+
+                <input type="radio" id="cegep" name="diplome" value="cegep" required class="mr-2" />
+                <label for="cegep" class="text-white mr-4">Cégep</label>
+
+                <input type="radio" id="universitaire" name="diplome" value="universitaire" required class="mr-2" />
+                <label for="universitaire" class="text-white">Universitaire</label>
+              </div>
+              <div class="errorMessage text-red-500"></div>
+            </div>
+
+            <input type="submit" value="Envoyer" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer" />
           </form>
+
           <!-- ----------------------------------------input du FORM--------------------------------------------------------- -->
         </div>
 

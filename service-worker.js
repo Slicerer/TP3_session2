@@ -1,4 +1,4 @@
-const CACHE_NAME = 'static-cache-v30';
+const CACHE_NAME = 'static-cache-v31';
 const FILES_TO_CACHE = [
     'offline.html',
     'index.html',
@@ -39,8 +39,8 @@ const FILES_TO_CACHE = [
     'manifest.json',
     'soumission.html',
     'connexion.html',
-    'commande.html'
-
+    'commande.html',
+    'service-worker.js'
 ];
 
 self.addEventListener('install', (evt) => {

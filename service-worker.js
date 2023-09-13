@@ -1,4 +1,4 @@
-const CACHE_NAME = 'static-cache-v21';
+const CACHE_NAME = 'static-cache-v22';
 const FILES_TO_CACHE = [
     'offline.html',
     'index.html',
@@ -36,7 +36,11 @@ const FILES_TO_CACHE = [
     'img/wave_bg.png',
     'style/css/main.css',
     'script.js',
-    'manifest.json'
+    'manifest.json',
+    'soumission.html',
+    'connexion.html',
+    'commande.html'
+
 ];
 
 self.addEventListener('install', (evt) => {

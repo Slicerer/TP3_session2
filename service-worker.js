@@ -1,4 +1,4 @@
-const CACHE_NAME = 'static-cache-v19';
+const CACHE_NAME = 'static-cache-v20';
 const FILES_TO_CACHE = [
     'offline.html',
     'index.html',
@@ -34,10 +34,7 @@ const FILES_TO_CACHE = [
     'img/takeoffsubject.png',
     'img/Team_work.png',
     'img/wave_bg.png',
-    
-    
-    // 'img',
-    // 'style/css/main.css'
+    'style/css/main.css'
 ];
 
 self.addEventListener('install', (evt) => {

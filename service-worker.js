@@ -1,4 +1,4 @@
-const CACHE_NAME = 'static-cache-v18';
+const CACHE_NAME = 'static-cache-v19';
 const FILES_TO_CACHE = [
     'offline.html',
     'index.html',
@@ -11,6 +11,30 @@ const FILES_TO_CACHE = [
     'flav_app/maskable_icon_x144.png',
     'flav_app/maskable_icon_x192.png',
     'flav_app/maskable_icon_x512.png',
+    'img/Broderie.png',
+    'img/car.jpg',
+    'img/dog_newway.png',
+    'img/dog_poiting.png',
+    'img/dog1.png',
+    'img/facebook.png',
+    'img/flames__bg.png',
+    'img/handshake.png',
+    'img/heroes_dog.png',
+    'img/Impression_GF.png',
+    'img/informatique.png',
+    'img/instagram.png',
+    'img/Lettrage.png',
+    'img/logo.png',
+    'img/mail.png',
+    'img/Numerique.png',
+    'img/programeur.png',
+    'img/screen_printing.png',
+    'img/Serigraphie.png',
+    'img/Sublimation.png',
+    'img/takeoffsubject.png',
+    'img/Team_work.png',
+    'img/wave_bg.png',
+    
     
     // 'img',
     // 'style/css/main.css'

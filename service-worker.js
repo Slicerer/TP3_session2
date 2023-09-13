@@ -1,12 +1,12 @@
-const CACHE_NAME = 'static-cache-v16';
+const CACHE_NAME = 'static-cache-v17';
 const FILES_TO_CACHE = [
     'offline.html',
     'index.html',
     'Contact.html',
     'services.html',
     'install.js',
-    'flav_app/maskable_icon_x144.png'
-    // 'flav_app',
+    'flav_app/maskable_icon_x144.png',
+    'flav_app',
     // 'img',
     // 'style/css/main.css'
 ];

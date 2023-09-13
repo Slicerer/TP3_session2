@@ -174,14 +174,23 @@ body {
 }
 
 .input-control.error input {
-  border-color: 3px dashed red;
+  border: 3px dashed red;
 }
+
+.input-control.error textarea {
+  border: 3px dashed red;
+}
+
 
 .input-control .errorMessage {
   color: red;
 }
 
 .input-control.success input {
+  border: 3px dashed green;
+}
+
+.input-control.success textarea {
   border: 3px dashed green;
 }
 

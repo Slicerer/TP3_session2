@@ -19,6 +19,7 @@
     <link rel="apple-touch-icon" href="flav_app/maskable_icon_x72.png" aria-label="Application icon" />
     <meta name="description" content="web application d'un site d'articles Promotionnels" />
     <meta name="theme-color" content="#2EA3DC" />
+    <script src="offline.js"></script>
     <script src="service-worker.js" aria-label="Service Worker"></script>
     <script>
       if ("serviceWorker" in navigator) {
@@ -205,6 +206,9 @@
           <!-- Pricing Card -->
           <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-neutral-900 rounded-lg border border-gray-100 shadow xl:p-8">
             <h3 class="mb-4 text-2xl lg:text-4xl font-semibold">Vêtements</h3>
+            <div id="offline-message" class="hidden bg-red-500 text-white p-2">
+              Vous êtes actuellement hors ligne. Les vidéos et la carte ne sont pas disponibles.
+            </div>
             <p class="font-light text-white sm:text-lg">Le kit parfait pour faire briller vos employés.</p>
             <div class="flex justify-center items-baseline my-8">
               <span class="mr-2 text-5xl font-extrabold">$461</span>

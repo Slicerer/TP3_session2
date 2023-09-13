@@ -1,5 +1,10 @@
 # TP3_session2
 
+Les pages à corriger sont; 
+index.html
+Contact.html
+service.html
+
 Accessibilité je suis a 97% je preferes garder mes style pour seulement 3%...
 
 Mes sources de composantes;
